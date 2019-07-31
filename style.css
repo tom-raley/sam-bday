@@ -34,6 +34,7 @@ img {
   height: 3em;
   padding: 2em;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -53,8 +54,12 @@ img {
 	margin-left: -20px;
 }
 
-#quote {
+p {
   font-size: 1.5em;
+  margin-block-start: 0px;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 #compliment-button {
@@ -83,9 +88,11 @@ img {
 }
 
 @media only screen and (max-width: 872px) {
+  h1 {
+    text-align: center;
+  }
   img{
     width: 45%;
-    height: auto;
   }
 
   .speech-bubble {
@@ -94,7 +101,7 @@ img {
     align-items: center;
     width: 45%;
     height: auto;
-    min-height: 200px;
+    min-height: 254px;
     padding: 1em;
   }
 }
