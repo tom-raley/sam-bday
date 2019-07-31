@@ -31,7 +31,7 @@ img {
   border-radius: .4em;
   color: #fff;
   width: 25em;
-  height: 3em;
+  height: 6em;
   padding: 2em;
   display: flex;
   flex-direction: column;
@@ -96,9 +96,6 @@ p {
   }
 
   .speech-bubble {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 45%;
     height: auto;
     min-height: 254px;
