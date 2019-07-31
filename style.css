@@ -1,0 +1,100 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #CFB2C2;
+  width: 100%;
+  font-family: Montserrat, sans-serif !important;
+}
+
+h1 {
+  font-size: 3em;
+  color: #010101;
+  /* font-weight: bold; */
+}
+
+img {
+  border-radius: 5em;
+}
+
+.quote-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #9B4F4F;
+  border-radius: .4em;
+  color: #fff;
+  width: 25em;
+  height: 3em;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #9B4F4F;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+}
+
+#quote {
+  font-size: 1.5em;
+}
+
+#compliment-button {
+  margin-top: 2em;
+  background-color: #965F7E;
+  height: 4em;
+  width: auto;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 5px #999;
+  border: 2px black solid;
+  outline: none;
+  font-family: Montserrat, sans-serif !important;
+}
+
+#compliment-button:hover {
+  background-color: #7D3F62;
+}
+
+#compliment-button:active {
+  box-shadow: 2px #666;
+  background-color: #7D3F62;
+  transform: translateY(3px);
+}
+
+@media only screen and (max-width: 872px) {
+  img{
+    width: 45%;
+    height: auto;
+  }
+
+  .speech-bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: auto;
+    min-height: 200px;
+    padding: 1em;
+  }
+}
